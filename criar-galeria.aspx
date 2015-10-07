@@ -37,7 +37,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="well text-center" style="background-color: #222; font-family: 'Arial Black'; color: #FFFFFF;">Nova Galeria</div>
+                    <div class="well text-center" style="background-color: #286090; font-family: 'Arial Black'; color: #FFFFFF;">Nova Galeria</div>
                     <div class="form-group-lg">
                         <label for="tbxNome">Nome da galeria:</label>
                         <asp:TextBox CssClass="form-control" ID="tbxNome" runat="server"></asp:TextBox>
@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="well text-center" style="background-color: #222; font-family: 'Arial Black'; color: #FFFFFF;">Adicionar fotos</div>
+                    <div class="well text-center" style="background-color: #286090; font-family: 'Arial Black'; color: #FFFFFF;">Adicionar fotos</div>
                     <div class="form-group-lg">
                         <label for="open_btn">Carregar imagens:</label>
                         <br />
