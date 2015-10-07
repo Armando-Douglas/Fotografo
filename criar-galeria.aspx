@@ -57,9 +57,12 @@
                 <div class="col-sm-4">
                     <div class="well text-center" style="background-color: #222; font-family: 'Arial Black'; color: #FFFFFF;">Adicionar fotos</div>
                     <div class="form-group-lg">
-                        <label for="open_btn">Click aqui para carregar imagens:</label>
+                        <label for="open_btn">Carregar imagens:</label>
                         <br />
                         <input type="button" id="open_btn" class="btn btn-primary" value="Enviar Arquivos" />
+                    </div>
+                    <div class="form-group-lg" style="margin-top:50%">
+                        <asp:Button ID="btnSalvar" CssClass="btn btn-primary btn-block" runat="server" Text="Salvar" />
                     </div>
                 </div>
             </div>
