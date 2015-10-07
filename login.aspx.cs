@@ -26,11 +26,10 @@ public partial class login : System.Web.UI.Page
         adapter.Fill(dt);
         if (dt.Rows.Count > 0)
         {
-            lblInformacao.Text = "funcionou";
         }
         else
         {
-            lblInformacao.Text = "não funcionou";
+            lblInformacao.Text = "Usuário ou senha Invalida!";
         }
     }
 }
