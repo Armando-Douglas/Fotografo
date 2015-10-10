@@ -26,6 +26,10 @@ public partial class login : System.Web.UI.Page
         adapter.Fill(dt);
         if (dt.Rows.Count > 0)
         {
+            String nome = dt.Rows[0]["nome"].ToString();
+            Session.Add("Nome", nome);
+
+            Response.Redirect("criar-galeria.aspx");
         }
         else
         {
