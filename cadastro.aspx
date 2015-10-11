@@ -2,7 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <asp:Label ID="lblJavaScript" runat="server" Text=""></asp:Label>
-    <%--<div class="container" style="width: 400px">--%>
     <div class="row">
         <div class="col-sm-2" style="background-color: #c1bebe">
         </div>
@@ -40,7 +39,7 @@
                 </asp:SqlDataSource>
             </div>
         </div>
-        <div class="col-sm-2" style=" height:auto; background-color:#808080">
+        <div class="col-sm-2" style="height: auto; background-color: #808080">
         </div>
     </div>
 </asp:Content>

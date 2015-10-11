@@ -22,14 +22,13 @@
             </div>
             <div>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Page 1</a></li>
-                    <li><a href="#">Page 2</a></li>
+                    <li class="active"><a href="galeria-privada.aspx">Galeria</a></li>
                     <li><a href="criar-galeria.aspx"><span class="glyphicons glyphicons-circle-plus"></span>Nova Galeria</a></li>
+                    <li><a href="#">Administrar Cliente</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a><asp:Label ID="lblNome" runat="server" Text=""></asp:Label></a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+                    <li><a onclick=""><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -39,7 +38,7 @@
         </asp:ContentPlaceHolder>
     </div>
     <footer>
-        <div class="container-fluid" style="background-color: #222; height: 60px; position: absolute; width: 100%; bottom: 0;">
+        <div class="container-fluid" style="background-color: #222; height: 60px; position: fixed; bottom: 0; width: 100%;">
         </div>
     </footer>
 </body>

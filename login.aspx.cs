@@ -29,7 +29,7 @@ public partial class login : System.Web.UI.Page
             String nome = dt.Rows[0]["nome"].ToString();
             Session.Add("Nome", nome);
 
-            Response.Redirect("criar-galeria.aspx");
+            Response.Redirect("galeria-privada.aspx");
         }
         else
         {
