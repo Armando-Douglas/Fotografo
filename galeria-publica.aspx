@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Select.master" AutoEventWireup="true" CodeFile="galeria-publica.aspx.cs" Inherits="galeria_publica" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteModal.master" AutoEventWireup="true" CodeFile="galeria-publica.aspx.cs" Inherits="galeria_publica" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <link href="dist/css/lightgallery.css" rel="stylesheet" />
