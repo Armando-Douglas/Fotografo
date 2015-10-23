@@ -147,7 +147,7 @@
                 <ItemTemplate>
                     <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="<%#Eval("caminho")%>" data-sub-html="<p></p>">
                         <a href="#">
-                            <img class="img-responsive" src="<%#Eval("caminho")%>" />
+                            <asp:CheckBox ID="CheckBox1" runat="server"/><img class="img-responsive" src="<%#Eval("caminho")%>" /> 
                         </a>
                     </li>
                 </ItemTemplate>

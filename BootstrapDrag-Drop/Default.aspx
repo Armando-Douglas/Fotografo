@@ -4,12 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <title></title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
- <script src="bootstrap.fd.js" type="text/javascript"></script>
+    <script src="bootstrap.fd.js" type="text/javascript"></script>
     <link href="bootstrap.fd.css" rel="stylesheet" type="text/css" />
 
     <script>
@@ -37,7 +37,7 @@
                         }
                     });
                 }).on('cancel.bs.filedialog', function (ev) {
-                    alert("Cancelled!");
+                    alert("Cancelado!");
                 });
             });
         });
