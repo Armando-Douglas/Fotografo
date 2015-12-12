@@ -1,0 +1,155 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="mp-fotografo.master.cs" Inherits="mp_fotografo" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Click Fotos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <%-- <link rel="stylesheet" href="plugin/bootstrap.min.css" />
+    <script src="plugin/bootstrap.min.js"></script>
+    <script src="plugin/jquery.min.js"></script>--%>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        .cssescuro {
+            background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+            background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+        }
+
+        .cssescurobt {
+            background: #222;
+        }
+
+        .csstexto {
+            color: #fff;
+        }
+
+        #GridView1 {
+            width: 500px;
+        }
+
+        .grid-view {
+            padding: 0;
+            margin: 0;
+            border: 1px solid #333;
+            font-family: "Verdana";
+            font-size: 0.9em;
+            width: 712px;
+            margin-left: 2px;
+            text-align: center;
+            margin-left: 11px;
+            margin-top: 20px;
+        }
+
+
+
+
+
+            .grid-view #topo {
+                background-color: #222;
+            }
+
+        .suggestionList {
+            margin-top: -28px;
+        }
+
+        .suggestionsBox {
+            /* background-color:#5190B2;*/
+            margin-top: -10px;
+        }
+
+
+        .grid-view tr.header {
+            color: white;
+            background-color: #999;
+            height: 25px;
+            vertical-align: middle;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .grid-view th, .grid-view td {
+            border: 0px solid #222;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .grid-view th {
+            text-align: center;
+            font-weight: bold;
+            background-color: #222;
+            color: #fff;
+            font-size: 12px;
+        }
+
+        .grid-view tr {
+            color: black;
+            background-color: #ffffed;
+            height: 25px;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+            .grid-view tr.alternate {
+                color: #CC3300;
+                background-color: #D4D4D4;
+                height: 25px;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+        .grid-view td {
+            padding: 5px;
+            background-color: #F4F4F4;
+            text-align: center;
+        }
+
+            .grid-view td input {
+                margin-top: 7px;
+                margin-left: 20px;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse" style="margin: 0;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-camera"></span>Click Fotos Select</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="Galeriafotografo.aspx"><span class="glyphicon glyphicon-picture"></span>Galeria</a></li>
+                    <li><a href="criar-galeria.aspx"><span class="glyphicon glyphicon-th-large"></span>Nova Galeria</a></li>
+                    <li><a href="convidarcliente.aspx"><span class="glyphicon glyphicon-user"></span>Convidar cliente</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a>
+                        <span class="glyphicon glyphicon-user"></span>
+                        <asp:Label ID="lblNome" runat="server" Text=""></asp:Label></a></li>
+                    <li><a href="login.aspx"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <div class="container-fluid" style="margin-top: 0px; height: 593px; background-image: url(imgProjeto/391.jpg);">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <footer>
+        <div class="container-fluid" style="background-color: #222; color: #fff; text-align: center; height: 32px; width: 100%; bottom: 0;">
+            <span xmlns:dct="http://purl.org/dc/terms/">Click Fotos</span> está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Atribuição-NãoComercial 4.0 Internacional</a>.  <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+                <img alt="Licença Creative Commons" style="border-width: 0" src="imgProjeto/88x31.png" /></a>
+        </div>
+    </footer>
+</body>
+</html>

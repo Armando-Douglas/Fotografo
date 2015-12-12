@@ -10,11 +10,13 @@ public partial class SiteModal : System.Web.UI.MasterPage
     protected void Page_Load(object sender, EventArgs e)
     {
         //Recebe o nome do Usuario logado e exibe na tela do Select
-        lblNome.Text = "Bem Vindo " + Convert.ToString(Session["Nome"]);
+        lblNome.Text = "Bem vindo " + Convert.ToString(Session["Nome"]);
+        string tipo = Convert.ToString(Session["tipo"]);
     }
-    public void Logout(object sender, EventArgs e) {
+    public void Logout(object sender, EventArgs e)
+    {
         Session.Clear();
         Response.Redirect("inicio.aspx");
-       
+
     }
 }
